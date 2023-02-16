@@ -9,21 +9,20 @@ setup(
     url='https://github.com/bigscience-workshop/t-zero.git',
     author='Multiple Authors',
     author_email='xxx',
-    python_requires='>=3.7, <3.8', # TODO: update when https://github.com/bigscience-workshop/promptsource/issues/584 is fixed
+    python_requires='>=3.7',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7',
     ],
     description='Multitask Prompted Training Enables Zero-Shot Task Generalization',
     packages=find_packages(),
     license="Apache Software License 2.0",
     long_description=readme,
     install_requires=[
-        "promptsource==0.1.0",
+        "promptsource",
         "accelerate",
         "transformers",
         "torch",
